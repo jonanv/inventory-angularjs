@@ -10,8 +10,8 @@ import { RippleModule } from 'primeng/ripple';
 import { ButtonModule } from 'primeng/button';
 
 // Components
-import { DashboardComponent } from './modules/dashboard/pages/dashboard.component';
-import { HomeComponent } from './modules/dashboard/components/home/home.component';
+import { DashboardComponent } from '../modules/dashboard/pages/dashboard.component';
+import { HomeComponent } from '../modules/dashboard/components/home/home.component';
 
 @NgModule({
   declarations: [
