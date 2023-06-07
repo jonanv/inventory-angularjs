@@ -1,14 +1,13 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 
 // Modules
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { RippleModule } from 'primeng/ripple';
-import { ButtonModule } from 'primeng/button';
 import { DashboardModule } from '../modules/dashboard/dashboard.module';
+import { SharedModule } from '../shared.module';
 
 @NgModule({
   declarations: [
@@ -16,11 +15,10 @@ import { DashboardModule } from '../modules/dashboard/dashboard.module';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule,
-    DashboardModule,
     BrowserAnimationsModule,
-    RippleModule,
-    ButtonModule
+    AppRoutingModule,
+    SharedModule,
+    DashboardModule
   ],
   providers: [],
   bootstrap: [AppComponent]
