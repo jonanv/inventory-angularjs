@@ -8,6 +8,7 @@ import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { RippleModule } from 'primeng/ripple';
 import { ButtonModule } from 'primeng/button';
+import { DashboardModule } from '../modules/dashboard/dashboard.module';
 
 @NgModule({
   declarations: [
@@ -16,6 +17,7 @@ import { ButtonModule } from 'primeng/button';
   imports: [
     BrowserModule,
     AppRoutingModule,
+    DashboardModule,
     BrowserAnimationsModule,
     RippleModule,
     ButtonModule
