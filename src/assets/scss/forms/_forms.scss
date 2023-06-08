@@ -1,0 +1,24 @@
+.form-control,
+.form-check-input {
+  &.is-invalid {
+    background-image: none !important;
+    background-color: rgba(255, 0, 0, .1) !important;
+  }
+
+  &.is-valid {
+    background-image: none !important;
+    background-color: rgba(0, 255, 0, .1) !important;
+  }
+}
+
+select.form-select {
+  background-image: url($arrowSelectFormImage) !important;
+
+  &.is-invalid {
+    background-color: rgba(255, 0, 0, .1) !important;
+  }
+
+  &.is-valid {
+    background-color: rgba(0, 255, 0, .1) !important;
+  }
+}
