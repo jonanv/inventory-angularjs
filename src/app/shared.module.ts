@@ -3,24 +3,21 @@ import { RouterModule } from '@angular/router';
 
 // Modules
 import { PrimengModule } from './shared/modules/primeng/primeng.module';
-import { NavbarComponent } from './shared/components/navbar/navbar.component';
-import { SidebarComponent } from './shared/components/sidebar/sidebar.component';
+import { LayoutModule } from './shared/components/layout/layout.module';
 
 
 
 @NgModule({
   declarations: [
-    NavbarComponent,
-    SidebarComponent
   ],
   imports: [
     RouterModule,
-    PrimengModule
+    PrimengModule,
+    LayoutModule,
   ],
   exports: [
     PrimengModule,
-    NavbarComponent,
-    SidebarComponent
+    LayoutModule,
   ]
 })
 export class SharedModule { }
