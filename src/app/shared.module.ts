@@ -1,4 +1,5 @@
 import { NgModule } from '@angular/core';
+import { RouterModule } from '@angular/router';
 
 // Modules
 import { PrimengModule } from './shared/modules/primeng/primeng.module';
@@ -13,10 +14,13 @@ import { SidebarComponent } from './shared/components/sidebar/sidebar.component'
     SidebarComponent
   ],
   imports: [
+    RouterModule,
     PrimengModule
   ],
   exports: [
-    PrimengModule
+    PrimengModule,
+    NavbarComponent,
+    SidebarComponent
   ]
 })
 export class SharedModule { }
